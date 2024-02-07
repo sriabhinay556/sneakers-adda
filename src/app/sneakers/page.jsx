@@ -6,7 +6,7 @@ const convertToUSD = priceCents => (priceCents / 100).toFixed(2);
 async function Sneakers() {
     const sneakersJson =  getAllSneakers();
     const sneakersData = await sneakersJson
-
+    
     return (
         <div className="text-center">
             {!sneakersData ? (
@@ -21,7 +21,7 @@ async function Sneakers() {
                                 <p>
                                     Retail Price: ${convertToUSD(result.data.retail_price_cents)}
                                 </p>
-                            
+
                         </Link>
                     ))}
                 </div>
