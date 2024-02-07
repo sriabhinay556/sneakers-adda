@@ -4,7 +4,7 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Sneakers Adda v1.0',
+  title: 'Sneakers Adda - v1.0',
 };
 
 export default function RootLayout({ children }) {
